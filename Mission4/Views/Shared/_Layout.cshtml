@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/NewFolder/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/CSS/StyleSheet.css" rel="stylesheet" />
+    <link rel="icon" href="~/Img/free-clipart-images-transparent-background-3.png" />
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+
+    <nav>
+        <a asp-controller="Blah" asp-action="Index">Home</a>
+        <a asp-controller="Blah" asp-action="Calc">Calc</a>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <script src="~/NewFolder/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/JQueary/jquery-3.6.3.min.js"></script>
+</body>
+</html>
